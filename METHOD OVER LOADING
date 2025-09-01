@@ -1,0 +1,29 @@
+class Greeting {
+    void wish() {
+        System.out.println("Hello!");
+    }
+
+    void wish(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+    void wish(String name, int age) {
+        System.out.println("Hello, " + name + "! You are " + age + " years old.");
+    }
+}
+
+public class MethodOverloadingDemo {
+    public static void main(String[] args) {
+        Greeting g = new Greeting();
+        g.wish();
+        g.wish("Usha");
+        g.wish("Usha", 18);
+    }
+}
+
+
+OUTPUT:
+Hello!
+Hello, Usha!
+Hello, Usha! You are 18 years old.
+
