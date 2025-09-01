@@ -1,0 +1,28 @@
+class Birthday {
+    String name;
+
+    Birthday() {
+        name = "Friend";
+    }
+
+    Birthday(String n) {
+        name = n;
+    }
+
+    void wish() {
+        System.out.println("Happy Birthday, " + name + "! ");
+    }
+}
+
+public class BirthdayWish {
+    public static void main(String[] args) {
+        Birthday b1 = new Birthday();
+        b1.wish();
+
+        Birthday b2 = new Birthday("Usha");
+        b2.wish();
+    }
+}
+OUTPUT:
+Happy Birthday, Friend! 
+Happy Birthday, Usha! 
