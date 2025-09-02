@@ -1,0 +1,19 @@
+package Com.Sample;
+
+public class AreaOfCircle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double radiusOfCircle=5;
+		float pi=3.14f;
+		double areaOfCircle=pi*radiusOfCircle*radiusOfCircle;
+		System.out.println("Radius og circle : " + radiusOfCircle);
+		System.out.println(" Area Of Circle : " + areaOfCircle);
+
+	}
+
+}
+
+OUTPUT:
+Radius og circle : 5.0
+ Area Of Circle : 78.50000262260437
