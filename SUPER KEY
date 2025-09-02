@@ -1,0 +1,34 @@
+package Com.Sample;
+class HOD{
+	HOD(){
+		System.out.println("Hod permssion granted");
+	}
+	
+}
+class Teacher extends HOD{
+	Teacher(){
+		super();
+		System.out.println("Teacher permission granted");
+	}
+}
+class student extends Teacher{
+	student(){
+		super();
+		System.out.println("student done program....!");
+	}
+}
+public class superkey {
+
+	public static void main(String[] args) {
+		student ch=new student();
+		
+
+	}
+
+}
+
+
+OUTPUT:
+Hod permssion granted
+Teacher permission granted
+student done program....!
