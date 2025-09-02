@@ -1,0 +1,19 @@
+package Com.Sample;
+
+public class factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=4;
+		int fact = 1;
+		
+		for(int i=1;i<=n;i++) {
+			fact*=i;
+		}
+		System.out.println("factorial of " + n + " is " + fact);
+		}	
+	}
+
+
+OUTPUT:
+factorial of 4 is 24
