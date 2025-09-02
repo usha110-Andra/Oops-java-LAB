@@ -1,0 +1,40 @@
+package Com.Sample;
+import java.lang
+.*;
+class RBI{
+	double amount;
+	public double getRateOfInterest(double amount){
+	return (amount*5)/100;
+	}
+}
+class SBI extends RBI{
+	public double getRateOfInterest(double amount) {
+		return (amount*6.5)/100;
+	}
+}
+class ICICI extends RBI{
+	public double getRateOfInterest(double amount) {
+		return (amount*7.5)/100;
+	}
+}
+
+public class Bank {
+
+	public static void main(String[] args) {
+		RBI rb=new RBI();
+		rb.amount=10000;
+		System.out.println("RBI rate of interest: " + rb.getRateOfInterest(10000));
+		RBI rbi=new SBI();
+		System.out.println("SBI rate of interest using upcasting: "+ rbi.getRateOfInterest(10000));
+		SBI sb=new SBI();
+		System.out.println("SBI rate of interest: "+sb.getRateOfInterest(10000));
+		ICICI ic=new ICICI();
+		System.out.println("ICICI rate of interest: "+ic.getRateOfInterest(10000));
+	}
+	
+}
+OUTPUT:
+RBI rate of interest: 500.0
+SBI rate of interest using upcasting: 650.0
+SBI rate of interest: 650.0
+ICICI rate of interest: 750.0
