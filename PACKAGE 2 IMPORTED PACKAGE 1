@@ -1,0 +1,22 @@
+package Package2;
+import java.lang.*;
+import Com.Sample.N;
+class D extends N {
+    void display() {
+		System.out.println("Usha Andra .....!!!" + a);
+		System.out.println(f);
+	
+    }
+}
+
+public class java {
+    public static void main(String[] args) {
+        D obj = new D();
+        obj.display();
+    }
+}
+
+
+OUTPUT:
+Usha Andra .....!!!importred From L
+113
